@@ -15,7 +15,8 @@
 
 - Internal CSS is used to define a style for a single HTML page.
 - To use internal styles, add a <style> element to the <head> section of the HTML page. You can then write your CSS rules inside this <style> element.
-Example:
+  Example:
+
 ```<head>
     <style>
       p {
@@ -24,3 +25,17 @@ Example:
     </style>
   </head>
 ```
+
+### External CSS
+
+- External CSS is used to define the style for many HTML pages.
+- With an external stylesheet, you can change the look of an entire website by changing just one file!
+  Example:
+
+```<head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+```
+### cascade and Priority
+- Highest -> lowest
+- Inline CSS > Internal CSS > External CSS
