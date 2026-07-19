@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+  </head>
+  <img>
+    <form>
+      <label> Name: </label>
+      <input type="text" disabled />
+      <label> Email: </label>
+      <input type="email" placeholder="Enter your email" readonly />
+      <label> Password: </label>
+      <input type="password" placeholder="Enter your password" />
+      <br />
+      <br />
+      <label> Age: </label>
+      <input type="number" autofocus min="18" max="100" />
+      <br />
+      <label> Gender: </label>
+      <input type="radio" name="gender" /> Male
+      <input type="radio" name="gender" /> Female
+      <br />
+      <label> Hobbies: </label>
+      <input type="checkbox" name="Hobbies" /> Reading
+      <input type="checkbox" name="Hobbies" /> Traveling
+
+      <br />
+      <label> City: </label>
+      <select>
+        <option>Delhi</option>
+        <option>Mumbai</option>
+        <option>Bangalore</option>
+      </select>
+      <br />
+
+      <label> Country: </label>
+      <input list="countries" />
+      <datalist id="countries">
+        <option value="India"></option>
+        <option value="USA"></option>
+        <option value="UK"></option>
+        <option value="Japan"></option>
+      </datalist>
+      <input type="color" />
+      <input type="range" min="0" max="100" />
+      <input type="submit" value="Submit" />
+    </form>
+
+
+    <audio controls>
+      <source src="gameover.mp3" />
+    </audio>
+    <video controls width="320" height="240" autoplay muted loop>
+      <source src="example.mkv" />
+    </video>
+
+   <canvas height="200" width="200" style="border: 1px solid black"></canvas>
+   <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Virat_Kohli_during_the_India_vs_Aus_4th_Test_match_at_Narendra_Modi09_March_2023.jpg" height="200" width="200" alt="Virat Kohli"/>
+   </canvas>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/M_rH3Z_R6-U?si=2bm_urajkO6B-vlS" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </body>
+</html>
