@@ -39,3 +39,13 @@
 ### cascade and Priority
 - Highest -> lowest
 - Inline CSS > Internal CSS > External CSS
+
+### Types Of Units
+1. Absoulte Units
+- Fixed Size
+Do not depend on anything else
+- eg: "px"
+
+2. Relative Units
+- They depend on another value
+- eg: "%", rem, vh, vw

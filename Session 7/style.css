@@ -1,0 +1,21 @@
+* {
+  margin: 0px;
+}
+
+.box {
+  width: 200px;
+  padding: 20px;
+  border: 2px solid black;
+  box-sizing: border-box;
+  /* display: none; */
+  visibility: hidden;
+}
+img {
+  width: 100%;
+  max-width: 400px;
+  border: 2px solid green;
+  margin: 20px;
+}
+span {
+  display: block;
+}

@@ -1,6 +1,6 @@
 * {
-  background-color: lightblue;
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 0px;
 }
 h1 {
   color: magenta !important;
@@ -66,4 +66,25 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
+}
+
+#typograph {
+  /* border: 2px solid black;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: justify; */
+  /* font-family: "Times New Roman", Times, serif; */
+  /* line-height: 40px;
+  word-spacing: 40px;
+  letter-spacing: 40px; */
+  width: 75vw;
+  height: 75vh;
+  border: 2px solid rebeccapurple;
+  font-size: 1rem;
+}
+.parent {
+  width: 400px;
+}
+.child {
+  width: 50%;
 }
