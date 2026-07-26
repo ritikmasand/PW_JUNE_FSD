@@ -1,16 +1,16 @@
-* {
+/* * {
   margin: 0px;
-}
+} */
 
-.box {
+/* .box {
   width: 200px;
   padding: 20px;
   border: 2px solid black;
   box-sizing: border-box;
-  /* display: none; */
+  display: none;
   visibility: hidden;
-}
-img {
+} */
+/* img {
   width: 100%;
   max-width: 400px;
   border: 2px solid green;
@@ -18,4 +18,109 @@ img {
 }
 span {
   display: block;
+} */
+/* .box {
+  float: left;
+} */
+/* .parent {
+  border: 3px solid red;
+}
+
+.box {
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  background: orange;
+}
+.parent::after {
+  content: "";
+  display: block;
+  clear: both;
+} */
+/* 
+.box {
+  height: 150px;
+  width: 150px;
+  background: orange;
+  position: relative;
+  left: 150px;
+} */
+
+/* .parent {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  background: lightblue;
+}
+
+.child {
+  width: 80px;
+  height: 80px;
+  background: red;
+  position: absolute;
+  top: 40px;
+  right: 30px;
+} */
+
+/* .chat {
+  height: 60px;
+  width: 60px;
+  background: greenyellow;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+} */
+/* .navbar {
+  position: sticky;
+  background: orange;
+  top: 0;
+  padding: 20px;
+} */
+/* .parent {
+  width: 300px;
+  height: 300px;
+  background: lightblue;
+  border: 2px solid black;
+  position: relative;
+}
+.child {
+  width: 80px;
+  height: 80px;
+  background: red;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+} */
+
+.box {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+}
+
+.red {
+  background: red;
+  top: 50px;
+  left: 50px;
+  z-index: 2;
+}
+
+.blue {
+  background: blue;
+  top: 90px;
+  left: 90px;
+  z-index: 5;
+}
+h1 {
+  color: red;
+}
+.heading {
+  color: blue;
+}
+#title {
+  color: green !important;
+}
+* {
+  color: brown;
 }
