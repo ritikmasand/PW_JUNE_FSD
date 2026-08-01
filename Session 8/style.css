@@ -1,0 +1,63 @@
+/* h1 {
+  font-size: 60px;
+  width: 100%;
+  border: 1px solid black;
+} */
+
+/* // Bad example */
+/* .container {
+  width: 1200px;
+}
+
+.container {
+  width: 100%;
+}
+img{
+    width: 100%;
+} */
+
+/* Mobile first  (default) */
+
+/* .card {
+  width: 100%;
+  padding: 10px;
+  background-color: lightblue;
+  border: 2px solid black;
+  box-sizing: border-box;
+} */
+
+/* Tablet */
+/* @media (min-width: 768px) {
+  .card {
+    width: 80%;
+    padding: 20px;
+    background-color: lightgreen;
+  }
+} */
+
+/* Desktop */
+
+/* @media (min-width: 1024px) {
+  .card {
+    width: 60%;
+    padding: 30px;
+    background-color: lightcoral;
+  }
+} */
+
+.card {
+  width: 300px;
+  height: 200px;
+  background-color: red;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    background-color: green;
+  }
+}

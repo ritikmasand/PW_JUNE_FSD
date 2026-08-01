@@ -1,0 +1,27 @@
+.container {
+  border: 1px solid black;
+  display: flex;
+  height: 400px;
+  /* flex-direction: c; */
+  justify-content: center;
+  align-items: center;
+  gap: 250px;
+  flex-wrap: wrap;
+}
+.one {
+  flex-grow: 2;
+}
+.two {
+  flex-grow: 1;
+}
+/* .two {
+  order: -1;
+} */
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: 10px;
+  color: white;
+  font-size: 24px;
+}
