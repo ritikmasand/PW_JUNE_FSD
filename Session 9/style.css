@@ -1,0 +1,23 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* grid-template-rows: 150px 150px; */
+  /* justify-items: center;
+  align-items: center; */
+
+  gap: 20px;
+}
+
+/* .header {
+  background: orange;
+  padding: 20px;
+  grid-row: 1/3;
+} */
+
+.box {
+  /* border: 2px solid black;
+  height: 80px;
+  width: 80px; */
+  background: skyblue;
+  padding: 20px;
+}
