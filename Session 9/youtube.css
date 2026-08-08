@@ -14,5 +14,6 @@ header {
 aside {
   background: skyblue;
   padding: 20px;
-  grid-row: 1/-1;
+  grid-column: 1/2;
+  grid-row: 2/-1;
 }
