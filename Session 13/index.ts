@@ -1,6 +1,6 @@
 let name3: string = "Ritik";
 
-let age: number = "fissfs";
+let age: number = 300;
 
 console.log(name3);
 // console.log(age);
