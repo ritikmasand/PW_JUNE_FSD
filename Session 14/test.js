@@ -22,3 +22,6 @@ console.log(r1);
 
 // 
 // console.log(Number(input)); // Type casting
+b=0;
+b= null;
+b;
