@@ -127,38 +127,188 @@ for (let i = 1; i <= 5; i++) {
 
 // for(initialize;condition;update)
 
-for (let i = 5; i >= 1; i--) {
-  console.log(i);
-}
+// for (let i = 5; i >= 1; i--) {
+//   console.log(i);
+// }
 
-for (let i = 1; i <= 10; i++) {
-  console.log(5 * i);
-}
+// for (let i = 1; i <= 10; i++) {
+//   console.log(5 * i);
+// }
 
 // while(condition)
-let i = 6;
-while (i <= 5) {
-  console.log(i);
-  i++;
-}
+// let i = 6;
+// while (i <= 5) {
+//   console.log(i);
+//   i++;
+// }
 
 // 5 = 5*4*3*2*1 // 1*2=2, 2*3 = 6, 6*4 = 24; 24*5  = 120
 // 4 = 4*3*2*1
-let factorial = 1;
+// let factorial = 1;
 
-for (let i = 1; i <= 5; i++) {
-  factorial = factorial * i;
-}
-console.log(factorial);
+// for (let i = 1; i <= 5; i++) {
+//   factorial = factorial * i;
+// }
+// console.log(factorial);
 
 // do while
 
-let j = 6;
-do {
-  console.log(j);
-  j++;
-} while (j <= 5);
+// let j = 6;
+// do {
+//   console.log(j);
+//   j++;
+// } while (j <= 5);
 
-for (let k = 1; k <= 5; ) {
-  console.log(k);
+// for (let k = 1; k <= 5; ) {
+//   console.log(k);
+// }
+
+// Break statement
+
+for (let i = 1; i <= 10; i++) {
+  if (i == 5) {
+    continue;
+  }
+  console.log(i);
+}
+
+// Counter
+
+let nums = [7, 2, 7, 5, 7, 8];
+
+// Q - I have to find the count of occurence of seven
+let count = 0;
+for (let i = 0; i < nums.length; i++) {
+  if (nums[i] == 7) {
+    count++;
+  }
+}
+// count = 3
+console.log("Seven count " + count);
+
+let num1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// Q - Find how many even numbers are there?
+
+let count1 = 0;
+
+for (let i = 0; i < num1.length; i++) {
+  if (num1[i] % 2 === 0) {
+    count1++;
+  }
+}
+
+console.log(count1);
+
+// Accumaltor
+
+// Q -> find sum of first 5 num starting from 1
+let sum = 0;
+for (let i = 1; i <= 5; i++) {
+  sum += i;
+}
+
+console.log(sum);
+
+// *
+// **
+// ***
+// ****
+// *****
+
+for (let i = 1; i <= 5; i++) {
+  // col
+  let row = "";
+  for (let j = 1; j <= i; j++) {
+    // row
+    row += "*";
+  }
+  console.log(row);
+}
+
+// ****
+// ****
+// ****
+// ****
+
+for (let i = 1; i <= 4; i++) {
+  let row = "";
+  for (let j = 1; j <= 4; j++) {
+    row += "*";
+  }
+  console.log(row);
+}
+
+// 1
+// 12
+// 123
+// 1234
+// 12345
+
+for (let i = 1; i <= 5; i++) {
+  let row = "";
+  for (let j = 1; j <= i; j++) {
+    row += j;
+  }
+  console.log(row);
+}
+
+// 1
+// 22
+// 333
+// 4444
+// 55555
+
+for (let i = 1; i <= 5; i++) {
+  let row = "";
+  for (let j = 1; j <= i; j++) {
+    row += i;
+  }
+  console.log(row);
+}
+// *
+// **
+// ***
+// ****
+// *****
+// ****
+// ***
+// **
+// *
+
+// Increasing part
+
+for (let i = 1; i <= 5; i++) {
+  let rows = "";
+  for (let j = 1; j <= i; j++) {
+    rows += "*";
+  }
+  console.log(rows);
+}
+
+for (let i = 4; i >= 1; i--) {
+  let rows = "";
+  for (let j = 1; j <= i; j++) {
+    rows += "*";
+  }
+  console.log(rows);
+}
+
+//     *
+//    * *
+//   * * *
+//  * * * *
+// 4 clos
+
+// 4 - 1 = 3
+let n = 4;
+for (let i = 1; i <= n; i++) {
+  let row = "";
+  for (let j = 1; j <= n - i; j++) {
+    row += " ";
+  }
+  for (let j = 1; j <= i; j++) {
+    row += "* ";
+  }
+  console.log(row);
 }
