@@ -143,7 +143,7 @@ console.log(fruits);
 
 const nums4 = [10, 5, 25, 2];
 
-nums4.sort((a,b)=>b-a);
+nums4.sort((a, b) => b - a);
 // if result < 0, a comes before b
 // 10 - 5 > 0 -> 10 5 25 2
 // 5 - 25 < 0 -> 10 5 25 2
@@ -153,8 +153,52 @@ nums4.sort((a,b)=>b-a);
 
 console.log(nums4);
 
-const sum = nums4.reduce((acc,cv)=>{
-    return acc+cv
-},0)
+const sum = nums4.reduce((acc, cv) => {
+  return acc + cv;
+}, 0);
 
 console.log(sum);
+
+// Rest and Spread
+
+// Syntax -> ...
+
+// 1. Spread Operator -> Think: Open/unlock the value
+
+const arr1 = [1, 2, 3];
+
+const arr2 = [...arr1];
+
+// console.log(arr2);
+
+// arr1 = [1,2,3].               ...arr1 -> 1,2,3
+
+const original = [1, 2, 3];
+const copy = [...original];
+
+copy.push(4);
+// console.log(copy);
+// console.log(original);
+
+const combined = [...arr1, ...arr2];
+console.log(combined);
+
+// 2. Rest -> collect/gather the remaining value
+
+function sum_1(...numbers: number[]) {
+  return numbers.reduce((a, b) => a + b, 0);
+}
+
+console.log(sum_1(10, 20));
+console.log(sum_1(10, 20, 30, 40, 50));
+console.log(sum_1(10, 200, 2000000));
+
+// Spread -> Expand
+// Rest   -> Collects
+
+function printName(first: string, ...others: string[]) {
+  console.log(first);
+  console.log(others);
+}
+
+printName("Ritik", "Rahul", "Aman");
