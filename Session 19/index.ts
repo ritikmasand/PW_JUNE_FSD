@@ -147,3 +147,4 @@ const user_4 = {
 const { nameee: first_name, ageee } = user_4;
 
 console.log(first_name, ageee);
+
