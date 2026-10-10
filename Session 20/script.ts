@@ -89,7 +89,7 @@ password.addEventListener("input", checkPasswords);
 confirmPassword.addEventListener("input", checkPasswords);
 
 //   console.log(username, email);
-form.addEventListener("submit", (e) => {
+form.addEventListener("submit", (e: SubmitEvent) => {
   e.preventDefault();
   if (!form.checkValidity()) {
     console.log("Invalid form");
