@@ -44,21 +44,23 @@
 // FormData
 const form = document.querySelector("#signupForm");
 const submit = document.querySelector("#submit");
+const password = document.querySelector("#password");
+const confirmPassword = document.querySelector("#confirmPassword");
 submit.disabled = true;
-const formData = new FormData(form);
-const username = formData.get("username");
-const email = formData.get("email");
-const password = formData.get("password");
-const confirmpassword = formData.get("confirmPassword");
-//   const submit = formData.get("submit")
-if (password !== confirmpassword) {
-    console.log("password do not match");
-    submit.disabled = true;
+function checkPasswords() {
+    if (password.value !== "" &&
+        confirmPassword.value !== "" &&
+        password.value === confirmPassword.value) {
+        console.log("password match");
+        submit.disabled = false;
+    }
+    else {
+        console.log("password do not match");
+        submit.disabled = true;
+    }
 }
-else {
-    console.log("password match");
-    submit.disabled = false;
-}
+password.addEventListener("input", checkPasswords);
+confirmPassword.addEventListener("input", checkPasswords);
 //   console.log(username, email);
 form.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -67,6 +69,11 @@ form.addEventListener("submit", (e) => {
         return;
     }
     console.log("Form is Valid");
+    const formData = new FormData(form);
+    const username = formData.get("username");
+    const email = formData.get("email");
+    console.log(username, email);
+    //   const submit = formData.get("submit")
 });
 // const username = formData.get("username");
 // console.log(username);
