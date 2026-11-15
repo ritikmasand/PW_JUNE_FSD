@@ -79,20 +79,32 @@ import { Transform, Writable } from "stream";
 
 // chaining
 
-const readable = fs.createReadStream("missing.txt");
+// const readable = fs.createReadStream("missing.txt");
 
-readable.on("data", (chunk) => {
-  console.log(chunk.toString());
-});
-readable.on("error", (err) => {
-  console.log("Something went wrong", err.message);
-});
+// readable.on("data", (chunk) => {
+//   console.log(chunk.toString());
+// });
+// readable.on("error", (err) => {
+//   console.log("Something went wrong", err.message);
+// });
 // const writable = fs.createWriteStream("data.txt.gz");
 
 // readable.pipe(zlib.createGzip()).pipe(writable);
 
 // console.log("Compression Started");
 
-readable.on("end", () => {
-  console.log("reading completed");
-});
+// readable.on("end", () => {
+//   console.log("reading completed");
+// });
+
+// Backpressure - when the data is produced faster than it can be consumed.
+
+// const readable = fs.createReadStream("data.txt");
+
+// const writable = fs.createWriteStream("copy.txt");
+
+// readable.pipe(writable);
+
+// writable.on("finish", () => {
+//   console.log("File copied successfully");
+// });
